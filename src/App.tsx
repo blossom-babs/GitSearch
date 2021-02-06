@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { SearchBar } from "./components/SearchBar";
+import { ApolloProvider } from "@apollo/client";
+import { client } from "./client";
+import { DataList } from "./components/DataList";
+import "./styles/app.scss";
+import { Footer } from "./components/Footer";
 
 function App() {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const onChange = (word: string) => {
+    setSearchTerm(word);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ApolloProvider client={client}>
+      <>
+        <h1 className="header__title first__header__title">GitSearch</h1>
+        <SearchBar onChange={onChange} />
+        <DataList searchTerm={searchTerm} />
+        <Footer />
+      </>
+    </ApolloProvider>
   );
 }
 
