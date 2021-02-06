@@ -34,7 +34,7 @@ export const DataList: React.FC<DataProps> = ({ searchTerm }) => {
   const { loading, error, data } = useQuery(USER_DATA, {
     variables: { login: searchTerm },
   });
-  console.log(error);
+  //console.log(error);
   if (loading) return <h1 className="header__title">Loading</h1>;
   if (error) return <h1 className="header__title">User Not found</h1>;
   if (!data) return <h1 className="header__title">There are no such users</h1>;

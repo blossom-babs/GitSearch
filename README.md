@@ -9,7 +9,7 @@ GitSearch utilizes github graphql api to clone concise information about any git
 
 - Clone the project to your local computer.
 ```
-git clone git@github.com:blossom-babs/Git-Hack.git
+git clone https://github.com/blossom-babs/GitSearch.git
 ```
 - Install the project dependencies.
 ```
@@ -32,6 +32,6 @@ In the project directory, you can run:
 - [React](https://reactjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
 
-## Live project 
+<!-- ## Live project 
 
-[GitHack](https://githack.netlify.app/)
+[GitHack](https://githack.netlify.app/) -->
