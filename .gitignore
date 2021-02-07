@@ -25,4 +25,4 @@ yarn-error.log*
 #FILES
 .env
 .env.development
-.env.production
+production.env
