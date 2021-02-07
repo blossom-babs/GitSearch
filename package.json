@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-app-env build",
     "build-dev": ".env.development react-app-rewired build",
     "build-prod": ".env.production react-app-rewired build",
     "test": "react-scripts test",
@@ -47,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-app-env": "^1.2.3"
   }
 }
