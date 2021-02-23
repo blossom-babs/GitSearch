@@ -23,7 +23,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "env react-scripts start",
     "build": "react-app-env build",
     "build-dev": ".env.development react-app-rewired build",
     "build-prod": ".env.production react-app-rewired build",
